@@ -11,19 +11,50 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import org.w3c.dom.Text;
 
 import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
     Button p1;
-    final static private int CAPTURE_IMAGE = 1;
+    ImageButton p2;
+    ImageButton p3;
 
+    final static private int CAPTURE_IMAGE = 1;
+    TextView t2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        p3 = (ImageButton) findViewById(R.id.p3);
+        p2 = (ImageButton) findViewById(R.id.p2);
+
+        p2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t2.setText("Po przycisku");
+                p2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        t2.setText("Wracamy se");
+                    }
+                });
+            }
+        });
+        p3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t2.setTextColor(0xFF00FF00);
+            }
+        });
+
+
+        t2 = (TextView) findViewById(R.id.tekst2);
+        t2.setText("robimy program");
 
         p1 = (Button) findViewById(R.id.button);
         p1.setOnClickListener(new View.OnClickListener() {
