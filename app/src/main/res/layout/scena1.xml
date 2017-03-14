@@ -23,7 +23,7 @@
         android:id="@+id/b1" />
 
     <Button
-        android:text="Zmiana koloru"
+        android:text="Zmiana koloru [mial byc zielony :( ]"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/b2" />
