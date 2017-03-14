@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="98dp"
+        android:layout_height="103dp"
+        app:srcCompat="@drawable/przycisk4"
+        android:id="@+id/p5" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t3" />
+
+    <Button
+        android:text="Zmiana napisu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1" />
+
+    <Button
+        android:text="Zmiana koloru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2" />
+</LinearLayout>

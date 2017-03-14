@@ -14,14 +14,15 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import org.w3c.dom.Text;
-
+import android.support.v7.widget.AppCompatImageButton;
 import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
     Button p1;
-    ImageButton p2;
-    ImageButton p3;
+    ImageButton p2, p3, p4;
+
+
 
     final static private int CAPTURE_IMAGE = 1;
     TextView t2;
@@ -30,8 +31,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        p4 = (ImageButton) findViewById(R.id.p4);
         p3 = (ImageButton) findViewById(R.id.p3);
         p2 = (ImageButton) findViewById(R.id.p2);
+
+        p4.setOnClickListener(new View.OnClickListener() {
+            @Override
+                    public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Scena1.class);
+                startActivity(i);
+            }
+
+
+
+        });
 
         p2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
 
     private static File getOutputMediaFile() {
         File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "Apteka");
