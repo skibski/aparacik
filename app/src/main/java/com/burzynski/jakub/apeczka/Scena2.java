@@ -27,22 +27,22 @@ public class Scena2 extends AppCompatActivity {
 
         RowLista RowBean_data[] = new RowLista[] {
 
-                new RowLista(R.drawable.przycisk1, "Mercedes"),
-                new RowLista(R.drawable.przycisk2, "Volkswagen"),
-                new RowLista(R.drawable.przycisk3, "BMW"),
-                new RowLista(R.drawable.przycisk4, "Aston Martin"),
-                new RowLista(R.drawable.przycisk5, "Mercedes"),
-                new RowLista(R.drawable.przycisk1, "Volkswagen"),
-                new RowLista(R.drawable.przycisk2, "BMW"),
-                new RowLista(R.drawable.przycisk3, "Aston Martin"),
-                new RowLista(R.drawable.przycisk4, "Mercedes"),
-                new RowLista(R.drawable.przycisk5, "Volkswagen"),
-                new RowLista(R.drawable.przycisk1, "BMW"),
-                new RowLista(R.drawable.przycisk2, "Aston Martin"),
-                new RowLista(R.drawable.przycisk3, "Mercedes"),
-                new RowLista(R.drawable.przycisk4, "Volkswagen"),
-                new RowLista(R.drawable.przycisk5, "BMW"),
-                new RowLista(R.drawable.przycisk1, "Aston Martin")
+                new RowLista(R.drawable.slowacki, "Mercedes"),
+                new RowLista(R.drawable.slowacki, "Volkswagen"),
+                new RowLista(R.drawable.slowacki, "BMW"),
+                new RowLista(R.drawable.slowacki, "Aston Martin"),
+                new RowLista(R.drawable.slowacki, "Mercedes"),
+                new RowLista(R.drawable.slowacki, "Volkswagen"),
+                new RowLista(R.drawable.slowacki, "BMW"),
+                new RowLista(R.drawable.slowacki, "Aston Martin"),
+                new RowLista(R.drawable.slowacki, "Mercedes"),
+                new RowLista(R.drawable.slowacki, "Volkswagen"),
+                new RowLista(R.drawable.slowacki, "BMW"),
+                new RowLista(R.drawable.slowacki, "Aston Martin"),
+                new RowLista(R.drawable.slowacki, "Mercedes"),
+                new RowLista(R.drawable.slowacki, "Volkswagen"),
+                new RowLista(R.drawable.slowacki, "BMW"),
+                new RowLista(R.drawable.slowacki, "Aston Martin")
         };
 
         RowAdapter adapter = new RowAdapter(this,
