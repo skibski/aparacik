@@ -24,15 +24,36 @@ public class Scena2 extends AppCompatActivity {
 
         list = (ListView) findViewById(R.id.list);
 
-        String cars[] = {"Honda", "Mercedes", "Fiat", "Ferrari", "Porshe", "Citroen", "Peugeot", "Ford","Honda", "Mercedes", "Fiat", "Ferrari", "Porshe", "Citroen", "Peugeot", "Ford","Honda", "Mercedes", "Fiat", "Ferrari", "Porshe", "Citroen", "Peugeot", "Ford","Honda", "Mercedes", "Fiat", "Ferrari", "Porshe", "Citroen", "Peugeot", "Ford"};
 
-        ArrayList<String> carL = new ArrayList<String>();
-        carL.addAll( Arrays.asList(cars) );
+        RowLista RowBean_data[] = new RowLista[] {
 
-        adapter = new ArrayAdapter<String>(this, R.layout.row, carL);
+                new RowLista(R.drawable.przycisk1, "Mercedes"),
+                new RowLista(R.drawable.przycisk2, "Volkswagen"),
+                new RowLista(R.drawable.przycisk3, "BMW"),
+                new RowLista(R.drawable.przycisk4, "Aston Martin"),
+                new RowLista(R.drawable.przycisk5, "Mercedes"),
+                new RowLista(R.drawable.przycisk1, "Volkswagen"),
+                new RowLista(R.drawable.przycisk2, "BMW"),
+                new RowLista(R.drawable.przycisk3, "Aston Martin"),
+                new RowLista(R.drawable.przycisk4, "Mercedes"),
+                new RowLista(R.drawable.przycisk5, "Volkswagen"),
+                new RowLista(R.drawable.przycisk1, "BMW"),
+                new RowLista(R.drawable.przycisk2, "Aston Martin"),
+                new RowLista(R.drawable.przycisk3, "Mercedes"),
+                new RowLista(R.drawable.przycisk4, "Volkswagen"),
+                new RowLista(R.drawable.przycisk5, "BMW"),
+                new RowLista(R.drawable.przycisk1, "Aston Martin")
+        };
+
+        RowAdapter adapter = new RowAdapter(this,
+                R.layout.main_layout, RowBean_data);
+
+        list = (ListView) findViewById(R.id.list);
+
         list.setAdapter(adapter);
-
-
     }
 }
+
+
+
 
