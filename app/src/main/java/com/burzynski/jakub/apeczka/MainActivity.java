@@ -19,7 +19,7 @@ import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button p1;
+    Button p1, p5;
     ImageButton p2, p3, p4;
 
 
@@ -31,10 +31,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        p5 = (Button) findViewById(R.id.p5);
         p4 = (ImageButton) findViewById(R.id.p4);
         p3 = (ImageButton) findViewById(R.id.p3);
         p2 = (ImageButton) findViewById(R.id.p2);
 
+        p5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Scena2.class);
+                startActivity(i);
+            }
+        });
         p4.setOnClickListener(new View.OnClickListener() {
             @Override
                     public void onClick(View v) {

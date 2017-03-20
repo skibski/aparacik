@@ -68,4 +68,15 @@
         android:layout_alignStart="@+id/tekst2"
         android:layout_marginBottom="65dp" />
 
+    <Button
+        android:text="przewijanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/p4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:id="@+id/p5" />
+
 </RelativeLayout>
